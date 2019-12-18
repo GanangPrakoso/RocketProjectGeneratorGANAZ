@@ -10,13 +10,13 @@
    <h1>Complete the form below to be a Rocket Seeker!</h1>
    <form action='/seekers/add' method='post'>
       <label>Name</label>
-      <input type='text' name='name' placeholder="input your name"> <br/>
+      <input type='text' name='name' placeholder="input your name" required> <br/>
       <label>Email</label>
-      <input type='text' name='email' placeholder="input your email"> <br/>
+      <input type='email' name='email' placeholder="input your email" required> <br/>
       <label>Password</label>
-      <input type='text' name='password' placeholder="input your password"> <br/>
+      <input type='password' name='password' placeholder="input your password" required> <br/>
       <label>Skills</label>
-      <input type='text' name='skills' placeholder="mention what you're good at!"> <br/>
+      <input type='text' name='skills' placeholder="mention what you're good at!" required> <br/>
       <button type='submit'>Be a Rocket Seeker!</button>
    </form>
 </body>

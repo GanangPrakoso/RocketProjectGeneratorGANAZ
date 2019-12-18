@@ -8,7 +8,9 @@ for (let i = 0; i < readFile.length; i++) {
   let split = readFile[i].split(',')
   // console.log(split)
   let obj = {
-    name: split[1]
+    name: split[1],
+    email: split[2],
+    password: split[3]
   }
   insertInitiator.push(obj)
 }

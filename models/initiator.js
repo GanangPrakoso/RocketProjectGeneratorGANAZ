@@ -7,8 +7,10 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Initiator.init({
-    name: DataTypes.STRING
-  })
+    name: DataTypes.STRING,
+    email: DataTypes.STRING,
+    password: DataTypes.STRING
+  }, {sequelize})
 
   Initiator.associate = function(models) {
     // associations can be defined here
