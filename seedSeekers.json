@@ -1,0 +1,23 @@
+[
+   {
+      "name":"Ganang Prakoso",
+      "rating" : 3,
+      "skills": "JavaScript, PHP",
+      "experience": 10,
+      "totalProject": 3
+   },
+   {
+      "name":"Diaz Kautsar",
+      "rating" : 4,
+      "skills": "Kotlin, Python",
+      "experience": 8,
+      "totalProject": 2
+   },
+   {
+      "name":"Gandi Pratsar",
+      "rating" : 5,
+      "skills": "JavaScript, PHP, React JS, Python",
+      "experience": 10,
+      "totalProject": 2
+   }
+]
