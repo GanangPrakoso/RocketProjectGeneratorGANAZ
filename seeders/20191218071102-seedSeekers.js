@@ -17,7 +17,9 @@ module.exports = {
         rating: data[i].rating,
         skills : data[i].skills,
         experience : data[i].experience,
-        totalProject : data[i].totalProject
+        totalProject : data[i].totalProject,
+        email : data[i].email,
+        password : data[i].password
       }
       input.push(obj)
     }
