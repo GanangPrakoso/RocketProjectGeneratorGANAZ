@@ -14,7 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     rating: DataTypes.INTEGER,
     skills: DataTypes.STRING,
     experience: DataTypes.INTEGER,
-    totalProject: DataTypes.INTEGER
+    totalProject: DataTypes.INTEGER,
+    email : DataTypes.STRING,
+    password : DataTypes.STRING
   }, {sequelize})
   
   Seeker.associate = function(models) {
