@@ -7,7 +7,9 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Initiator.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    email: DataTypes.STRING,
+    password: DataTypes.STRING
   })
 
   Initiator.associate = function(models) {
