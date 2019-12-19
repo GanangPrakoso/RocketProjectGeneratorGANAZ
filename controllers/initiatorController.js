@@ -56,6 +56,7 @@ class InitiatorController {
         })
             .then(initiator => {
                 res.render('addProject.ejs', {data: initiator})
+
             })
             .catch(err => {
                 res.send(err)

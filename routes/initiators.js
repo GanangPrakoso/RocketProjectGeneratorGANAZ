@@ -7,7 +7,12 @@ const projectController = require('../controllers/projectController')
 //     res.render('initiatorsAdd')
 // })
 
+
 // router.post('/add', initiatorController.add)
+router.post('/add', initiatorController.add)
+
+// router.get('/', initiatorController.findAll)
+
 
 router.post('/', initiatorController.login)
 
