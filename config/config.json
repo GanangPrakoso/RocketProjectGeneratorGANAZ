@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "rpgGanaz",
+    "username": "diaz",
+    "password": "inipassword",
+    "database": "rppGanaz",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": 0

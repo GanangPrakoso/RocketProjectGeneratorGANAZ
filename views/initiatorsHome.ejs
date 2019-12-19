@@ -28,10 +28,11 @@
             <td><%= data.Projects[i].qualifications %></td>
             <td><%= data.Projects[i].maxCollaborator %></td>
             <td><%= data.Projects[i].currentCollaborator %></td>
-            <td><button type="submit"><a href="/initiators/<%= data.Projects[i].id %>/start">Start Project</a></button> 
-               | <button type="submit"><a href='/initiators/<%= data.Projects[i].id %>/finish'>Finish Project</a></button> </td>
+            <td><button type="submit"><a href="/initiators/<%= data.Projects[i].id %>/manage">Manage</a></button>
          </tr>
       <% } %>
    </table>
+   <br>
+   <h3><a href="/initiators/<%= data.id %>/initiate-project">CLICK HERE TO INITIATE PROJECT</a></h3>
 </body>
 </html>

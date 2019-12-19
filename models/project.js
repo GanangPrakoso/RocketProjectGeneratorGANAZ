@@ -15,7 +15,16 @@ module.exports = (sequelize, DataTypes) => {
     maxCollaborator: DataTypes.INTEGER,
     currentCollaborator: DataTypes.INTEGER,
     InitiatorId: DataTypes.INTEGER
-  }, {sequelize})
+  }, {hooks: {
+    beforeCreate: (instances, options) => {
+      if (instances.maxCollaborator === 0) {
+        instances.maxCollaborator = 3;
+        console.log(instances.maxCollaborator)
+      }
+    },
+  },
+    sequelize
+  })
 
   Project.associate = function(models) {
     // associations can be defined here
