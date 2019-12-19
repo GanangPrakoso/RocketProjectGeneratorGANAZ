@@ -6,6 +6,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-     return queryInterface.dropTable('Initiators', 'email');
+     return queryInterface.removeColumn('Initiators', 'email');
   }
 };

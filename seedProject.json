@@ -1,0 +1,30 @@
+[
+   {
+      "name": "Sudoku",
+      "status": 0,
+      "deadline": "2019-12-31",
+      "qualifications": "Javascript, Express, SQL",
+      "maxCollaborator": 4,
+      "currentCollaborator": 0,
+      "InitiatorId": 1 
+   },
+   {
+      "name": "Konser Dangdut",
+      "status": 1,
+      "deadline": "2019-12-29",
+      "qualifications": "Guitar, Keyboard, Gendang",
+      "maxCollaborator": 3,
+      "currentCollaborator": 0,
+      "InitiatorId": 2
+   },
+   {
+      "name": "Team Futsal antar RT",
+      "status": 0,
+      "deadline": "2019-12-28",
+      "qualifications": "Kiper, FLank",
+      "maxCollaborator": 2,
+      "currentCollaborator": 0,
+      "InitiatorId": 3
+   }
+
+]

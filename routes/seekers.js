@@ -8,4 +8,7 @@ router.get('/add', (req, res) => {
 
 router.post('/add', seekerController.add)
 
+router.post('/', seekerController.login)
+
+
 module.exports = router

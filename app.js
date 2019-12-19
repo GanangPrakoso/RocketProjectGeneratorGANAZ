@@ -22,6 +22,4 @@ app.use('/seekers', seekers)
 
 
 
-
-
 app.listen(3000)

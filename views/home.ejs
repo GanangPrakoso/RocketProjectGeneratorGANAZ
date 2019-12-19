@@ -7,9 +7,31 @@
    <title>Landing Page</title>
 </head>
 <body>
-   <h2><a href='/initiators/add'>Register as Initiator</a></h2>
+   <!-- <h2><a href='/initiators/add'>Register as Initiator</a></h2>
    <h2><a href='/seekers/add'>Register as Seekers</a></h2>
    <h2><a href='/initiators/login'>Login as Initiator</a></h2>
-   <h2><a href='/seekers/login'>Login as Seeker</a></h2>
+   <h2><a href='/seekers/login'>Login as Seeker</a></h2> -->
+   <section>
+      <h1>Login as Initiator</h1>
+      <form action="/initiators" method='post'>
+         <label>Email</label>
+         <input type='email' name="emailInitiator" placeholder="Input your email"> <br/>
+         <label>Password</label>
+         <input type='password' name="passwordInitiator" placeholder="Input your password">
+         <button type="submit">Login</button>
+      </form>
+      <p><a href='/initiators/add'>Don't have an account yet? click to sign up as inititator</a></p>
+   </section>
+   <section>
+      <h1>Login as Seeker</h1>
+      <form action="/seekers" method='post'>
+         <label>Email</label>
+         <input type='email' name="emailSeekers" placeholder="Input your email"> <br/>
+         <label>Password</label>
+         <input type='password' name="passwordSeekers" placeholder="Input your password">
+         <button type="submit">Login</button>
+      </form>
+      <p><a href='/seekers/add'>Don't have an account yet? click to sign up as seeker</a></p>
+   </section>
 </body>
 </html>
