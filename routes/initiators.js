@@ -8,7 +8,7 @@ router.get('/add', (req, res) => {
 
 router.post('/add', initiatorController.add)
 
-router.get('/', initiatorController.findAll)
+// router.get('/', initiatorController.findAll)
 
 router.post('/', initiatorController.login)
 

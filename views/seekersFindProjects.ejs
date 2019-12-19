@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Find Project!</title>
+</head>
+
+<body>
+   <h1>All projects available:</h1>
+   <table>
+      <tr>
+         <th>ID.</th>
+         <th>Project Name</th>
+         <th>Status</th>
+         <th>Deadline</th>
+         <th>Qualifications</th>
+         <th>Max Collaborator</th>
+         <th>Current Collaborator</th>
+         <th>Actions</th>
+      </tr>
+      <% for (let i = 0; i < data.length; i++) { %>
+      <% if (data[i].status === 0) { %>
+      <tr>
+         <td><%= data[i].id %></td>
+         <td><%= data[i].name %></td>
+         <td><%= statusChange(data[i].status) %></td>
+         <td><%= data[i].deadline %></td>
+         <td><%= data[i].qualifications %></td>
+         <td><%= data[i].maxCollaborator %></td>
+         <td><%= data[i].currentCollaborator %></td>
+         <td><button type="submit"><a href="/<%= dataSeeker.id %>/findProject/<%= data[i].id %>">Apply!</a></button> </td>
+      </tr>
+      <% } %>
+      <% } %>
+   </table>
+</body>
+
+</html>

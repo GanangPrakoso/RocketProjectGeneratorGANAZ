@@ -10,5 +10,9 @@ router.post('/add', seekerController.add)
 
 router.post('/', seekerController.login)
 
+router.get('/:SeekerId/findProject', seekerController.findProject)
+
+router.post('/:SeekerId/findProject/:ProjectId', seekerController.applyProject)
+
 
 module.exports = router

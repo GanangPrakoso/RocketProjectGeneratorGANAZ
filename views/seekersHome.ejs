@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Welcome Seekers Home</title>
+</head>
+<body>
+   <h1>What you wanna do today, <%= data.name %>?</h1>
+   <section>
+      <h3>Your current status :</h3>
+      <table>
+            <tr>
+               <td>Rating</td>
+               <td><%= data.experience / data.totalProject %></td>
+            </tr>
+            <tr>
+               <td>Total Project</td>
+               <td><%= data.totalProject %></td>
+      </table>
+   </section>
+   <section>
+      <h3>Your current projects:</h3>
+      <table>
+         <tr>
+            <th>Project ID</th>
+            <th>Project name</th>
+            <th>Status project</th>
+            <th>Your status</th>
+            <th>Deadline</th>
+         </tr>
+         <% for (let i=0; i<=data.Projects.length-1; i++) { %>
+            <tr>
+               <td><%= data.Projects[i].id %></td>
+               <td><%= data.Projects[i].name %></td>
+               <td><%= statusChange(data.Projects[i].status) %></td>
+               <td><%= statusSeeker(data.Projects[i].ProjectCollaborator.statusSeeker) %></td>
+               <td><%= data.Projects[i].deadline %></td>
+            </tr>
+         <% } %>
+      </table>
+   </section>
+   <br/>
+   <button><a href='/seekers/<%= data.id %>/findProject'>Find new project!</a></button>
+</body>
+</html>
