@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       status: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       deadline: {
         type: Sequelize.STRING
@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       currentCollaborator: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       InitiatorId: {
         type: Sequelize.INTEGER

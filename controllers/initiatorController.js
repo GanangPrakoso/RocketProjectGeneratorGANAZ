@@ -46,41 +46,22 @@ class InitiatorController {
             })
     }
 
-    static statusStart (req, res) {
-        let id = req.params.id
-        Project.update({
-            status : 1
-        },{
-            where : {
+    static initiateProject (req, res) {
+        let id = Number(req.params.idInitiator)
+        // console.log(id)
+        Initiator.findOne({
+            where: {
                 id : id
             }
         })
-            .then (data => {
-                // res.send(`berhasil ubah status`)
-                res.redirect('/initiators')
+            .then(initiator => {
+                res.render('addProject.ejs', {data: initiator})
             })
-            .catch (err => {
+            .catch(err => {
                 res.send(err)
             })
     }
 
-    static statusFinish (req, res) {
-        let id = req.params.id
-        Project.update({
-            status : 2
-        },{
-            where : {
-                id : id
-            }
-        })
-            .then (data => {
-                res.send(`berhasil ubah status`)
-                // res.redirect('/initiators')
-            })
-            .catch (err => {
-                res.send(err)
-            })
-    }
 }
 
 module.exports = InitiatorController
