@@ -23,6 +23,29 @@ class seekerController {
             res.send(err)
          })
    }
+
+   static login (req, res) {
+      let email = req.body.emailSeekers
+      let password = req.body.passwordSeekers
+      Seeker.findOne({
+          where : {
+              email : email,
+              password : password
+          }
+      })
+          .then(data => {
+              // console.log(data);
+              if (data)
+            //   res.render('seekerHome.ejs')
+            res.send('yoi masuk bos')
+
+              else
+              res.send(`ada yang salah`)
+          })
+          .catch(err=> {
+              res.send(err)
+          })
+  }
 }
 
 module.exports = seekerController

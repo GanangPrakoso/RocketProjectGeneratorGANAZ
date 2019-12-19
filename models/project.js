@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   Project.init({
     name: DataTypes.STRING,
     status: DataTypes.INTEGER,
+    deadline: DataTypes.STRING,
     qualifications: DataTypes.STRING,
     maxCollaborator: DataTypes.INTEGER,
     currentCollaborator: DataTypes.INTEGER,

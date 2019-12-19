@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Current Project</h1>
+   <table>
+      <tr>
+         <th>No.</th>
+         <th>Project Name</th>
+         <th>Status</th>
+         <th>Deadline</th>
+         <th>Qualifications</th>
+         <th>Max Collaborator</th>
+         <th>Current Collaborator</th>
+         <th>Actions</th>
+      </tr>
+      <% for (let i = 0; i < data.Projects.length; i++) { %>
+         <tr>
+            <td><%= i + 1 %></td>
+            <td><%= data.Projects[i].name %></td>
+            <td><%= statusChange(data.Projects[i].status) %></td>
+            <td><%= data.Projects[i].deadline %></td>
+            <td><%= data.Projects[i].qualifications %></td>
+            <td><%= data.Projects[i].maxCollaborator %></td>
+            <td><%= data.Projects[i].currentCollaborator %></td>
+            <td><button type="submit"><a href="/initiators/<%= data.Projects[i].id %>/start">Start Project</a></button> 
+               | <button type="submit"><a href='/initiators/<%= data.Projects[i].id %>/finish'>Finish Project</a></button> </td>
+         </tr>
+      <% } %>
+   </table>
+</body>
+</html>

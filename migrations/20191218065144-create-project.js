@@ -14,6 +14,9 @@ module.exports = {
       status: {
         type: Sequelize.INTEGER
       },
+      deadline: {
+        type: Sequelize.STRING
+      },
       qualifications: {
         type: Sequelize.STRING
       },

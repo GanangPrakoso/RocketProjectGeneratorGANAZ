@@ -8,4 +8,14 @@ router.get('/add', (req, res) => {
 
 router.post('/add', initiatorController.add)
 
+router.get('/', initiatorController.findAll)
+
+router.post('/', initiatorController.login)
+
+router.get('/:id/start', initiatorController.statusStart)
+
+router.get('/:id/finish', initiatorController.statusFinish)
+
+
+
 module.exports = router
