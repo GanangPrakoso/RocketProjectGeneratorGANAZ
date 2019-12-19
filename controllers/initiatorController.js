@@ -56,8 +56,8 @@ class InitiatorController {
             }
         })
             .then (data => {
-                // res.send(`berhasil ubah status`)
-                res.redirect('/initiators')
+                res.send(`berhasil ubah status`)
+                // res.redirect('/initiators')
             })
             .catch (err => {
                 res.send(err)
